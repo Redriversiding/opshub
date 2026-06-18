@@ -1,0 +1,17 @@
+{
+  "name": "opshub",
+  "version": "1.0.0",
+  "description": "OpsHub - Red River Siding Operations Platform",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "node server/index.js",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "db:migrate": "node server/db/migrate.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
