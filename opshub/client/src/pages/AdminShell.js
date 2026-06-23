@@ -4,13 +4,7 @@ import api from '../utils/api';
 
 // Page components (imported inline for brevity — split into files in production)
 import AllJobs from '../components/AllJobs';
-import SchedOverview from '../components/SchedOverview';
-import TaskTypeView from '../components/TaskTypeView';
-import PaintQueue from '../components/PaintQueue';
-import Dispatch from '../components/Dispatch';
-import CrewsPage from '../components/CrewsPage';
-import UsersPage from '../components/UsersPage';
-import MyAccount from '../components/MyAccount';
+import { SchedOverview, TaskTypeView, PaintQueue, Dispatch, CrewsPage, UsersPage, MyAccount } from '../components/SchedOverview';
 
 const TASK_TYPES = [
   {id:'Siding',       icon:'fa-border-all',  color:'#9B59B6'},
