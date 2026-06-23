@@ -334,7 +334,7 @@ export function CrewsPage({ jobs }) {
               {err&&<div style={{fontSize:11,color:'var(--red2)',minHeight:15}}>{err}</div>}
             </div>
             <div className="mfoot">
-              {editCrew&&<button className="btn btn-sm" style={{color:'var(--red2)',marginRight:'auto'}} onClick={async()=>{if(confirm('Remove this crew?')){await api.delete(`/users/${editCrew.id}`);const r=await api.get('/users/crews');setCrews(r.data);setShowForm(false);setEditCrew(null);}}}><i className="fa fa-trash"></i> Remove</button>}
+              {editCrew&&<button className="btn btn-sm" style={{color:'var(--red2)',marginRight:'auto'}} onClick={async()=>{if(window.confirm('Remove this crew?')){await api.delete(`/users/${editCrew.id}`);const r=await api.get('/users/crews');setCrews(r.data);setShowForm(false);setEditCrew(null);}}}><i className="fa fa-trash"></i> Remove</button>}
               <button className="btn" onClick={()=>{setShowForm(false);setEditCrew(null);}}>Cancel</button>
               <button className="btn btn-blue" onClick={saveCrew}><i className="fa fa-check"></i> Save</button>
             </div>
