@@ -1,5 +1,5 @@
 // AllJobs.js - Job list and grid view
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import api from '../utils/api';
 import { useAuth } from '../hooks/useAuth';
 
