@@ -44,7 +44,7 @@ export default function AdminShell() {
 
   function NavItem({ id, icon, label, badge, badgeClass = 'nb-b' }) {
     return (
-      <div className={`ni${view === id ? ' on' : ''}`} onClick={() => setView(id)}>
+<div className={`ni${view === id ? ' on' : ''}`} onClick={() => { setView(id); loadJobs(); }}>
         <i className={`fa ${icon}`}></i> {label}
         {badge ? <span className={`nbadge ${badgeClass}`} style={{marginLeft:'auto'}}>{badge}</span> : null}
       </div>
@@ -130,7 +130,7 @@ export default function AdminShell() {
           </div>
           {TASK_TYPES.map(tt => (
             <div key={tt.id} className={`tt-item${view==='stt'&&activeTT===tt.id?' on':''}`}
-              onClick={() => { setActiveTT(tt.id); setView('stt'); }}>
+              onClick={() => { setActiveTT(tt.id); setView('stt'); loadJobs(); }}
               <div style={{ width: 7, height: 7, borderRadius: '50%', background: tt.color, flexShrink: 0 }}></div>
               <span style={{ flex: 1 }}>{tt.id}</span>
             </div>
