@@ -130,7 +130,7 @@ export default function AdminShell() {
           </div>
           {TASK_TYPES.map(tt => (
             <div key={tt.id} className={`tt-item${view==='stt'&&activeTT===tt.id?' on':''}`}
-              onClick={() => { setActiveTT(tt.id); setView('stt'); loadJobs(); }}
+              onClick={() => { setActiveTT(tt.id); setView('stt'); loadJobs(); }}>
               <div style={{ width: 7, height: 7, borderRadius: '50%', background: tt.color, flexShrink: 0 }}></div>
               <span style={{ flex: 1 }}>{tt.id}</span>
             </div>
