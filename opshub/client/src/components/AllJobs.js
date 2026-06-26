@@ -12,6 +12,7 @@ const TASK_TYPES = [
   {id:'Eaves',icon:'fa-water',color:'#5B9FE8',dd:1},
   {id:'Downpipes',icon:'fa-arrows-down-to-line',color:'#2C4A6E',dd:1},
   {id:'Painting',icon:'fa-paint-roller',color:'#C39BD3',dd:3},
+  {id:'Tyvek',        icon:'fa-wind',        color:'#48A999'},
 ];
 const DD = {};
 TASK_TYPES.forEach(t => { DD[t.id] = t.dd; });
