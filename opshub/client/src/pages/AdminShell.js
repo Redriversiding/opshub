@@ -15,6 +15,7 @@ const TASK_TYPES = [
   {id:'Eaves',        icon:'fa-water',       color:'#5B9FE8'},
   {id:'Downpipes',    icon:'fa-arrows-down-to-line',color:'#2C4A6E'},
   {id:'Painting',     icon:'fa-paint-roller',color:'#C39BD3'},
+  {id:'Tyvek',        icon:'fa-wind',        color:'#48A999'},
 ];
 
 export default function AdminShell() {
