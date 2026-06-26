@@ -9,5 +9,5 @@
   "display": "standalone",
   "theme_color": "#0D1B2A",
   "background_color": "#0D1B2A",
-  "orientation": "portrait-primary"
+  "orientation": "any"
 }
